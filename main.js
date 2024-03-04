@@ -41,12 +41,12 @@ const changecard = (currindex1) => {
         }
     });
 };
-// const initialDelay = 4000; 
-// intervalId = setInterval(() => {
-//     progcardcont.scrollLeft += currindex >= progcard1.length - 2 ? -9 * width2 : width2;
-//     currindex = currindex >= progcard1.length - 2 ? 1 : currindex + 1;
-//     changecard(currindex);
-// }, initialDelay);
+const initialDelay = 4000; 
+intervalId = setInterval(() => {
+    progcardcont.scrollLeft += currindex >= progcard1.length - 2 ? -9 * width2 : width2;
+    currindex = currindex >= progcard1.length - 2 ? 1 : currindex + 1;
+    changecard(currindex);
+}, initialDelay);
 
 let ques = document.querySelectorAll(".ques");
 let ans = document.querySelectorAll(".ans");
